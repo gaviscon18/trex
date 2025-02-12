@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://trex-runner.com/ -->
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>T-Rex Game – Google Dino Run</title>
+  <meta name="description"
+    content="Google Chrome&#39;s unblocked offline game about dinosaur T-rex running through the desert, jumping over cactuses and dodging pterodactyls.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./T-Rex Game – Google Dino Run_files/style.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://trex-runner.com/favicon.ico">
+  <link rel="canonical" href="https://trex-runner.com/">
+  <meta property="og:title" content="Unblocked T-Rex Runner Game from Google Chrome">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://trex-runner.com">
+  <meta property="og:image" content="https://trex-runner.com/img/trex-runner.png">
+  <meta property="og:site_name" content="T-Rex Runner Game">
+  <meta property="og:description"
+    content="Game about T-rex running through the desert, jumping over cactuses and dodging pterodactyls">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Check out this hacked T-Rex game from Google Chrome!">
+  <meta name="twitter:description" content="Check out this hidden T-Rex game from Google Chrome unblocked!">
+  <meta name="twitter:image:src" content="https://trex-runner.com/img/trex-runner.png">
+  <script>
+    var user_name = localStorage.getItem("userName");
+    if (user_name == null) user_name = "";
+  </script>
+  <style>
+    body.shimeji-pinned iframe {
+      pointer-events: none;
+    }
+
+    body.shimeji-select-ie {
+      cursor: cell !important;
+    }
+
+    #shimeji-contextMenu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #shimeji-contextMenu::-webkit-scrollbar-thumb {
+      background-color: rgba(30, 30, 30, 0.6);
+      border-radius: 3px;
+    }
+
+    #shimeji-contextMenu::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+  <meta name="shimejiBrowserExtensionId" content="gohjpllcolmccldfdggmamodembldgpc" data-version="2.0.5">
+</head>
+
+<body class="offline" onload="getUserName()">
+  <div class="desc"><img class="logo" itemprop="image" src="./T-Rex Game – Google Dino Run_files/trex.jpg" alt="Dino">
+    <h1>Dinosaur T-Rex Game</h1>
+    <p>This Easter Egg is usually hidden on the No Internet connection error page in Google's Chrome web browser and
+      played offline. Here, however, you can play the hacked Dino T-Rex Runner Game online and compete with other
+      players. Press the <b>space bar</b> to start the game. Use the <b>up</b> and <b>down arrow keys</b> to control the
+      dinosaur. Try to score the maximum points.</p>
+  </div>
+  <div class="controlsec"><button class="btn" id="user" onclick="setUserName()" type="button">name not set</button>
+    <button class="btn" id="mutebtn" onclick="Mute()" type="button">mute</button> <button class="btn" id="zoombtn"
+      onclick="Zoom()" type="button"><span class="zoom"><span class="zoom-inner"></span></span></button> <a class="btn"
+      id="screenshot" onclick="doScreenshot()" href="https://trex-runner.com/#" download="trex-screenshot"
+      title="Take screenshot">S</a>
+  </div>
+  <header id="main-frame-error" class="interstitial-wrapper">
+    <div class="runner-container"><canvas class="runner-canvas" width="600" height="150"
+        style="width: 600px; height: 150px;"></canvas></div>
+  </header>
+  <div class="sec">
+    <div>
+      <h2>Top scores of the day</h2>
+      <table id="records">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Moldova</td>
+            <td>9982</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ganapathi</td>
+            <td>9981</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>simone</td>
+            <td>9979</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>sop </td>
+            <td>9958</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>DJM</td>
+            <td>9631</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Sparkle Glitter</td>
+            <td>7923</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>MR KHAN POV</td>
+            <td>6846</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="adverts">
+      <span>Advertisement</span>
+      <script async="" src="./T-Rex Game – Google Dino Run_files/f.txt" crossorigin="anonymous"></script>
+      <!-- trex-adaptive#1 -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4894759983606832" data-ad-slot="7322909759"
+        data-ad-format="link" data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+  <input type="hidden" id="token" value="c25bdd9e4a74006c63a6cc4f398408562d89283b1e926f306f73910c5bf0c37d">
+  <section id="offline-resources">
+    <img id="offline-resources-1x" src="./T-Rex Game – Google Dino Run_files/offline-sprite-1x.png"
+      alt="T-Rex Runner Sprite">
+    <img id="offline-resources-2x" src="./T-Rex Game – Google Dino Run_files/offline-sprite-2x.png"
+      alt="T-Rex Runner Sprite 1">
+    <template id="audio-resources"></template>
+  </section>
+  <div class="menu"><a href="https://trex-runner.com/night/"><img src="./T-Rex Game – Google Dino Run_files/night.png"
+        alt="Night T-Rex"><span>Night</span></a><a href="https://trex-runner.com/godzilla/"><img
+        src="./T-Rex Game – Google Dino Run_files/godzilla-menu.png" alt="Godzilla"><span>Godzilla</span></a><a
+      href="https://trex-runner.com/nyancat/"><img src="./T-Rex Game – Google Dino Run_files/nyan-menu.png"
+        alt="Nyan Cat"><span>Nyan Cat</span></a><a href="https://trex-runner.com/santa/"><img
+        src="./T-Rex Game – Google Dino Run_files/santa-menu.png" alt="Santa"><span>Santa</span></a><a
+      href="https://trex-runner.com/naruto/"><img src="./T-Rex Game – Google Dino Run_files/naruto-menu.png"
+        alt="Naruto"><span>Naruto</span></a><a href="https://trex-runner.com/halloween/"><img
+        src="./T-Rex Game – Google Dino Run_files/halloween-menu.png" alt="Halloween"><span>Halloween</span></a></div>
+  <footer>
+    <div class="share">
+      <a class="fb" target="_blank" rel="noopener nofollow" title="Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftrex-runner.com"><span class="sico"></span></a>
+      <a class="tt" target="_blank" rel="noopener nofollow" title="Twitter"
+        href="https://twitter.com/intent/tweet?text=T-Rex%20Runner%20%E2%80%93%20Dinosaur%20Google%20Chrome%20Game&amp;url=https://trex-runner.com/"><span
+          class="sico"></span></a>
+    </div>
+    <span>TRex-Runner.com © 2017 · <a href="https://trex-runner.com/privacy-policy/" target="_blank"
+        title="Privacy Policy">Privacy Policy</a></span>
+  </footer>
+  <script>
+    var muteSnd = localStorage.getItem("muteSnd"),
+      muteBtn = document.getElementById("mutebtn"),
+      userN = document.getElementById("user");
+    if (muteSnd == null || muteSnd == 0) {
+      muteSnd = false;
+      muteBtn.innerText = "mute";
+    } else {
+      muteSnd = true;
+      muteBtn.innerText = "unmute";
+    }
+    function Mute() {
+      if (muteSnd) {
+        muteSnd = false;
+        localStorage.setItem("muteSnd", 0);
+        muteBtn.innerText = "mute";
+      } else {
+        muteSnd = true;
+        localStorage.setItem("muteSnd", 1);
+        muteBtn.innerText = "unmute";
+      }
+      document.getElementById("mutebtn").blur();
+      document.getElementById("main-frame-error").focus();
+    }
+    function getUserName() { userN.innerText = user_name; if (user_name == "") userN.innerText = "name not set"; }
+    function setUserName() {
+      var e_name = "";
+      e_name = prompt("Enter name", user_name);
+      if (!e_name == '' || !e_name == null) {
+        user_name = e_name;
+        userN.innerText = user_name;
+        localStorage.setItem("userName", user_name);
+        document.getElementById("user").blur();
+        document.getElementById("main-frame-error").focus();
+      }
+    }
+    function updateRecords() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("records").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("POST", "/ajax/table.php?" + new Date().getTime(), true);
+      xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+      xhttp.send("top");
+    }
+    window.addEventListener('keydown', function (e) {
+      if (e.keyCode == 32 && e.target == document.body) {
+        e.preventDefault();
+      }
+    });
+    function doScreenshot() {
+      var canvas = document.getElementsByClassName('runner-canvas')[0];
+      var screens = document.getElementById('screenshot');
+      dataURL = canvas.toDataURL("image/png");
+      screens.setAttribute('href', dataURL);
+    }
+    function Zoom() {
+      if (document.body.classList.contains('sizegx12')) {
+        document.body.classList.replace('sizegx12', 'sizegx15');
+      } else if (document.body.classList.contains('sizegx15')) {
+        document.body.classList.remove('sizegx15');
+      } else document.body.classList.add('sizegx12');
+    }
+    document.onload = updateRecords();
+  </script>
+  <script src="./T-Rex Game – Google Dino Run_files/trexgamev6.js.indir"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./T-Rex Game – Google Dino Run_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-62795078-2');
+  </script>
+  <div id="shimeji-workArea"
+    style="position: fixed; background: transparent; z-index: 2147483643; width: 100vw; height: 100vh; left: 0px; top: 0px; transform: translate(0px, 0px); pointer-events: none;">
+  </div>
+  <div id="veepn-breach-alert"><template shadowrootmode="open">
+      <style>
+        .breach-popup {
+          font-family: FigtreeVF, sans-serif;
+          position: fixed;
+          z-index: 2147483638;
+          text-rendering: optimizelegibility;
+          top: 0;
+          left: 0;
+          right: 0;
+          pointer-events: none;
+          padding-inline: 16px;
+          height: 0;
+          overflow: visible;
+          color: #222e3a
+        }
+
+        .breach-popup * {
+          box-sizing: border-box
+        }
+
+        .breach-popup__inner {
+          background-color: #de4558;
+          width: 100%;
+          border-radius: 16px;
+          margin-inline: auto;
+          pointer-events: all;
+          position: relative;
+          transition: transform .25s ease-in-out, max-width .25s ease-in-out;
+          transform: translateY(16px);
+          max-height: calc(100svh - 80px);
+          display: flex;
+          flex-direction: column
+        }
+
+        .breach-popup__header {
+          min-height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 16px;
+          padding: 4px;
+          cursor: pointer
+        }
+
+        .breach-popup__close {
+          cursor: pointer;
+          background-color: transparent;
+          border-style: none;
+          outline: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+          opacity: .5
+        }
+
+        .breach-popup__wrap {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows .25s ease-in-out;
+          overflow: hidden
+        }
+
+        .breach-popup__content {
+          overflow: hidden;
+          opacity: 0;
+          transform: translateY(-10px)
+        }
+
+        .breach-popup--minimize .breach-popup__inner {
+          max-width: 485px;
+          transform: translateY(-100%)
+        }
+
+        .breach-popup--collapse .breach-popup__inner {
+          max-width: 485px
+        }
+
+        .breach-popup--expand .breach-popup__inner {
+          max-width: 1120px
+        }
+
+        .breach-popup--expand .breach-popup__wrap {
+          grid-template-rows: 1fr
+        }
+
+        .breach-popup--expand .breach-popup__content {
+          opacity: 1;
+          transform: translateY(0);
+          transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+          transition-delay: .15s
+        }
+
+        .breach-popup--expand .breach-popup__header {
+          cursor: default
+        }
+
+        .breach-info {
+          padding: 2px;
+          height: 100%
+        }
+
+        .breach-info__inner {
+          padding: 22px 22px 0;
+          background-color: #fff;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          height: 100%;
+          overflow: auto
+        }
+
+        .breach-info__alert {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 700;
+          margin: 0
+        }
+
+        .breach-info__list {
+          margin-top: 24px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px
+        }
+
+        @media only screen and (width >=992px) {
+          .breach-info__list {
+            flex-wrap: nowrap
+          }
+        }
+
+        .breach-info__item {
+          width: 100%
+        }
+
+        .breach-info__item:nth-child(2) {
+          max-width: 320px
+        }
+
+        .breach-info__item:nth-child(3) {
+          max-width: 200px
+        }
+
+        .breach-info__title {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: -.1px;
+          color: #de4558;
+          margin-top: 0;
+          margin-bottom: 4px
+        }
+
+        .breach-info__description {
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: -.1px
+        }
+
+        .breach-info__description ul {
+          margin: 0
+        }
+
+        .breach-info__actions {
+          display: flex;
+          justify-content: center;
+          padding-top: 32px;
+          padding-bottom: 22px;
+          background-color: #fff;
+          position: sticky;
+          bottom: 0
+        }
+
+        .breach-info__btn {
+          cursor: pointer;
+          border-style: none;
+          outline: none;
+          display: inline-flex;
+          align-items: center;
+          height: 48px;
+          padding-inline: 20px;
+          border-radius: 12px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: -.1px;
+          color: #fff;
+          background-color: #ff6400
+        }
+
+        .button-expand {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 100%);
+          z-index: 1
+        }
+
+        .button-expand__pointer {
+          cursor: pointer
+        }
+
+        .button-expand__alert {
+          pointer-events: none;
+          transition: opacity .25s ease-in-out
+        }
+
+        .button-expand__arrow {
+          pointer-events: none;
+          transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+          transform-origin: center
+        }
+
+        .button-expand--minimize .button-expand__arrow,
+        .button-expand--collapse .button-expand__alert,
+        .button-expand--expand .button-expand__alert {
+          opacity: 0
+        }
+
+        .button-expand--expand .button-expand__arrow {
+          transform: rotate(180deg)
+        }
+
+        .header-collapse {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          column-gap: 4px;
+          padding-left: 8px;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -.1px;
+          color: #fff
+        }
+
+        .header-expand {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          column-gap: 4px;
+          padding-left: 20px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -.1px;
+          color: #fff
+        }
+      </style>
+    </template></div>
+  <style>
+    @font-face {
+      font-family: FigtreeVF;
+      src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"), url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");
+      font-weight: 100 1000;
+      font-display: swap
+    }
+  </style>
+  <div id="veepn-guard-alert"><template shadowrootmode="open">
+      <style>
+        html {
+          box-sizing: border-box;
+          text-size-adjust: 100%;
+          word-break: normal;
+          -moz-tab-size: 4;
+          tab-size: 4
+        }
+
+        *,
+        :before,
+        :after {
+          background-repeat: no-repeat;
+          box-sizing: border-box
+        }
+
+        :before,
+        :after {
+          text-decoration: inherit;
+          vertical-align: inherit
+        }
+
+        * {
+          padding: 0;
+          margin: 0
+        }
+
+        hr {
+          overflow: visible;
+          height: 0;
+          color: inherit;
+          border: 0;
+          border-top: 1px solid
+        }
+
+        details,
+        main {
+          display: block
+        }
+
+        summary {
+          display: list-item
+        }
+
+        small {
+          font-size: 80%
+        }
+
+        [hidden] {
+          display: none
+        }
+
+        abbr[title] {
+          border-bottom: none;
+          text-decoration: underline;
+          text-decoration: underline dotted
+        }
+
+        a {
+          background-color: transparent
+        }
+
+        a:active,
+        a:hover {
+          outline-width: 0
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+          font-family: monospace
+        }
+
+        pre {
+          font-size: 1em
+        }
+
+        b,
+        strong {
+          font-weight: bolder
+        }
+
+        sub,
+        sup {
+          font-size: 75%;
+          line-height: 0;
+          position: relative;
+          vertical-align: baseline
+        }
+
+        sub {
+          bottom: -.25em
+        }
+
+        sup {
+          top: -.5em
+        }
+
+        table {
+          border-color: inherit;
+          text-indent: 0
+        }
+
+        iframe {
+          border-style: none
+        }
+
+        input {
+          border-radius: 0
+        }
+
+        [type=number]::-webkit-inner-spin-button,
+        [type=number]::-webkit-outer-spin-button {
+          height: auto
+        }
+
+        [type=search] {
+          -webkit-appearance: textfield;
+          -moz-appearance: textfield;
+          appearance: textfield;
+          outline-offset: -2px
+        }
+
+        [type=search]::-webkit-search-decoration {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none
+        }
+
+        textarea {
+          overflow: auto;
+          resize: vertical
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+          font: inherit;
+          color: inherit
+        }
+
+        optgroup {
+          font-weight: 700
+        }
+
+        button {
+          overflow: visible
+        }
+
+        button,
+        select {
+          text-transform: none
+        }
+
+        button,
+        [type=button],
+        [type=reset],
+        [type=submit],
+        [role=button] {
+          cursor: pointer
+        }
+
+        button::-moz-focus-inner,
+        [type=button]::-moz-focus-inner,
+        [type=reset]::-moz-focus-inner,
+        [type=submit]::-moz-focus-inner {
+          border-style: none;
+          padding: 0
+        }
+
+        button,
+        html [type=button],
+        [type=reset],
+        [type=submit] {
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          appearance: button
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+          background-color: transparent;
+          border-style: none
+        }
+
+        button:-moz-focusring,
+        [type=button]::-moz-focus-inner,
+        [type=reset]::-moz-focus-inner,
+        [type=submit]::-moz-focus-inner {
+          outline: 1px dotted ButtonText
+        }
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none
+        }
+
+        a:focus,
+        button:focus,
+        input:focus,
+        select:focus,
+        textarea:focus {
+          outline-width: 0
+        }
+
+        select::-ms-expand {
+          display: none
+        }
+
+        select::-ms-value {
+          color: currentcolor
+        }
+
+        legend {
+          border: 0;
+          color: inherit;
+          display: table;
+          white-space: normal;
+          max-width: 100%
+        }
+
+        ::-webkit-file-upload-button {
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          appearance: button;
+          color: inherit;
+          font: inherit
+        }
+
+        [disabled] {
+          cursor: default
+        }
+
+        img {
+          border-style: none
+        }
+
+        progress {
+          vertical-align: baseline
+        }
+
+        [aria-busy=true] {
+          cursor: progress
+        }
+
+        [aria-controls] {
+          cursor: pointer
+        }
+
+        [aria-disabled=true] {
+          cursor: default
+        }
+
+        ul,
+        ol {
+          list-style-type: none
+        }
+
+        figure {
+          margin: 0
+        }
+
+        .guard-popup {
+          font-family: FigtreeVF, sans-serif;
+          position: fixed;
+          z-index: 2147483638;
+          top: 8px;
+          left: 24px;
+          overflow: visible;
+          color: #222e3a;
+          background-color: #fff;
+          max-width: 416px;
+          width: calc(100% - 48px);
+          border-radius: 16px;
+          box-shadow: 0 4px 20px #00000040;
+          padding: 24px
+        }
+
+        .guard-popup__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          column-gap: 16px;
+          margin-bottom: 24px
+        }
+
+        .guard-popup__close {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          opacity: .7
+        }
+
+        .guard-popup__img {
+          line-height: 0;
+          margin-bottom: 24px
+        }
+
+        .guard-popup__img img {
+          width: 100%;
+          aspect-ratio: 368/142;
+          object-fit: cover;
+          border-radius: 12px;
+          overflow: hidden
+        }
+
+        .guard-popup__title {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 8px
+        }
+
+        .guard-popup__description {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 500;
+          color: #4a5764;
+          margin-bottom: 28px
+        }
+
+        .guard-popup__actions {
+          display: flex;
+          justify-content: flex-end;
+          column-gap: 16px
+        }
+
+        .guard-popup__btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 16px;
+          border-radius: 5px;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 700;
+          cursor: pointer;
+          color: #fff;
+          background: linear-gradient(180deg, #5695fd, #1554ff)
+        }
+      </style>
+    </template></div>
+  <style>
+    @font-face {
+      font-family: FigtreeVF;
+      src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"), url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");
+      font-weight: 100 1000;
+      font-display: swap
+    }
+  </style>
+  <style>
+    body {
+      background: #ffffff !important;
+    }
+  </style>
+
+</body>
+
+</html>
